@@ -3,6 +3,7 @@ let altura;
 let imc;
 let resultado;
 let imcArredondado;
+let alturaNova;
 
 
 
@@ -51,8 +52,8 @@ function calcular(event){
     if (!valido) {
         return;
     }
-
-    imc = peso / (altura * altura);
+    alturaNova = altura / 100
+    imc = peso / (alturaNova * alturaNova);
     imcArredondado = imc.toFixed(2);
 
     resultado = document.getElementById('resultado');
