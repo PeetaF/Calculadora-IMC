@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.formulario label {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formulario input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formulario input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.erro {
+    color: #ff0000;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    display: none; 
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    text-align: center;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .formulario {
+        padding: 15px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}

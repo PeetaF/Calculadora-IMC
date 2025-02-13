@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+
+<h1>Bem vindo a Calculadora de IMC</h1>
+<div class="formulario">
+    <form action="" onsubmit="return calcular(event)">
+        <label for="">Digite seu peso: </label> <br>
+        <input type="text" name="peso" id="peso" placeholder="Exemplo: 65"> <br> <br>
+        <span class="erro" id="erroPeso"></span>
+
+        <br> <br>
+
+        <label for="">Digite sua altura: </label> <br>
+        <input type="text" name="altura" id="altura" placeholder="Exemplo: 180">
+        <span class="erro" id="erroAltura"></span>
+        <br> <br>
+        <input type="submit" value="Calcular IMC">
+    </form>
+</div>
+
+
+<div id="resultado"></div>
+    
+    <script src="calculaimc.js"></script>
+</body>
+</html>
